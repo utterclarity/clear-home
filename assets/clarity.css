@@ -44,6 +44,8 @@ body {
     position: relative;
 
     border-top: 1px solid rgb(210, 210, 210);
+
+    float: left;
 }
 
 .project:first-child {
@@ -66,6 +68,29 @@ body {
 
 .project p {
     font-size: 16px;
+}
+
+/** project icons (text) */
+
+.project a .icon {
+    font-weight: normal;
+}
+
+.project:hover a .icon {
+    text-decoration: underline;
+}
+
+.project .icon {
+    font-size: 150px;
+    display: block;
+    padding-left: 25%;
+}
+
+/* throw every 2nth (left-aligned) project icon over */
+.project:not(#main):nth-child(2n) .icon {
+    float: right;
+    padding-left: 0px;
+    padding-right: 25%;
 }
 
 .desc {
